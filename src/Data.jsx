@@ -1,7 +1,86 @@
 // -----------------------------------------------------------------------------
 // DATA OF THE PLANTS
 // -----------------------------------------------------------------------------
-// Details that should be written: name, id, price, description, image and/or size?
 
-
-
+export const products = [
+  {
+    name: "Plant 1",
+    price: 150,
+    image: " ",
+    description: "This is a plant",
+    size: "small",
+    id: 1,
+  },
+  {
+    name: "Plant 2",
+    price: 550,
+    image: " ",
+    description: "This is a plant",
+    size: "large",
+    id: 1,
+  },
+  {
+    name: "Plant 3",
+    price: 350,
+    image: " ",
+    description: "This is a plant",
+    size: "middle",
+    id: 1,
+  },
+  {
+    name: "Plant 4",
+    price: 699,
+    image: " ",
+    description: "This is a plant",
+    size: "large",
+    id: 1,
+  },
+  {
+    name: "Plant 5",
+    price: 150,
+    image: " ",
+    description: "This is a plant",
+    size: "small",
+    id: 1,
+  },
+  {
+    name: "Plant 6",
+    price: 150,
+    image: " ",
+    description: "This is a plant",
+    size: "small",
+    id: 1,
+  },
+  {
+    name: "Plant 7",
+    price: 799,
+    image: " ",
+    description: "This is a plant",
+    size: "large",
+    id: 1,
+  },
+  {
+    name: "Plant 8",
+    price: 150,
+    image: " ",
+    description: "This is a plant",
+    size: "small",
+    id: 1,
+  },
+  {
+    name: "Plant 9",
+    price: 450,
+    image: " ",
+    description: "This is a plant",
+    size: "small",
+    id: 1,
+  },
+  {
+    name: "Plant 10",
+    price: 250,
+    image: " ",
+    description: "This is a plant",
+    size: "middle",
+    id: 1,
+  },
+];

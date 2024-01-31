@@ -18,21 +18,12 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" />
+            {/* <Route path="/"/> */}
             <Route path="/Shop" element={<Shop />} />
-            <Route path="/CartPage" />
-              <Route exact path="/CartPage">
-            <CartPage />{" "}
-          </Route>
-          <Route exact path="/CheckoutPage">
-            <CheckoutPage />
-          </Route>
-          <Route exact path="/Footer">
-            <Footer />{" "}
-          </Route>
-          <Route exact path="/AboutUs">
-            <AboutUs />{" "}
-          </Route>
+            <Route path="/CartPage" element={<CartPage />} />
+            <Route path="/CheckoutPage" element={<CheckoutPage />} />
+            <Route path="/Footer" element={<Footer />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
           </Routes>
         </Router>
       </ShopContextProvider>

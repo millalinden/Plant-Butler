@@ -1,0 +1,31 @@
+.who {
+  background-color: white;
+  border-radius: 6%;
+  width: 50%;
+  margin: auto;
+  font-size: 30px;
+  line-height: 45px;
+}
+.where {
+  background-color: white;
+  border-radius: 6%;
+  width: 50%;
+  margin: auto;
+}
+.how {
+  background-color: white;
+  border-radius: 6%;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUs {
+  margin-top: 100px;
+}
+a {
+  text-decoration: none;
+  color: green;
+  margin-bottom: 15px;
+  font-size: 30px;
+}

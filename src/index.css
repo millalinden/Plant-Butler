@@ -1,5 +1,8 @@
 /* GLOBAL STYLES */
-
+@import url("Pages/CartPage/CartPage.module.css");
+@import url("Pages/CheckoutPage/CheckoutPage.module.css");
+@import url("Components/Footer/Footer.module.css");
+@import url("Components/AboutUs/AboutUs.module.css");
 body {
-    background-color: #97CE9C;
+  background-color: #97ce9c;
 }

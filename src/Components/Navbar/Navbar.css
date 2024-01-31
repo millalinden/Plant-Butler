@@ -1,0 +1,29 @@
+.navbar {
+  position: absolute;
+  margin: 4px 4px 4px 4px;
+  width: 378px;
+  height: 100px;
+  background-color: white;
+  opacity: 0.85;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #193f1d;
+  box-shadow: 2px 2px #97ce9c;
+}
+
+.cartLogo {
+  position: absolute;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+.shoppingCart {
+  color: #193f1d;
+  margin-bottom: 15px;
+}
+.placeholderLogo {
+  width: 88px;
+  margin-right: 270px;
+}

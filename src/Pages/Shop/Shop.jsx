@@ -14,7 +14,9 @@ const Shop = () => {
       </div>
       <div className="products">
         {PRODUCTS.map((product) => (
-          <Product data={product} />
+          <div key={product.id}>
+            <Product data={product} />
+          </div>
         ))}
       </div>
     </div>

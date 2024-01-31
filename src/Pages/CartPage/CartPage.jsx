@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../../Components/Footer/Footer";
 
 const handleClick = () => {
   const discountMessage = document.querySelector(".discountMessage");
@@ -48,10 +49,10 @@ const CartPage = () => {
             </Link>
           </button>
         </div>
+        <Footer />
       </div>
     </>
   );
 };
 
 export default CartPage;
-

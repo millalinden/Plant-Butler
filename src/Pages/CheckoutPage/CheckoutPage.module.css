@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+.HomePageBtn {
+  width: 290px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: #97ce9c;
+}
+.popUpMessage {
+  font-size: 30px;
+  margin: 40px;
+}
+.checkoutPage {
+  background-color: rgba(240, 255, 255, 0.885);
+  border-radius: 3rem;
+  padding-top: 50px;
+  margin: auto;
+  margin-top: 100px;
+  height: 25rem;
+  width: 30rem;
+}
+h2 {
+  margin-bottom: 20px;
+}

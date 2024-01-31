@@ -1,0 +1,22 @@
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 20px;
+  background-color: white;
+}
+.firstPart {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+.secondPart {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+.thirdPart {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}

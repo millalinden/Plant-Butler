@@ -1,5 +1,9 @@
 /* GLOBAL STYLES */
-
 body {
-    background-color: #97CE9C;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  /*min-width: 1000px;*/
+  min-height: 100vh;
+  background-color: blueviolet;
 }

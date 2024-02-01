@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // CART LOGIC = WHAT YOU SEE IN HEADER (WHEN YOU ADD PRODUCTS COUNT)
 // -----------------------------------------------------------------------------
+/*
 import React, { useContext } from "react";
 import { PRODUCTS } from "../../products";
 import { ShopContext } from "../../context/shop-context.jsx";
@@ -22,4 +23,4 @@ export const Cart = () => {
       </div>
     </div>
   );
-};
+};   */

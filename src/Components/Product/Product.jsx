@@ -8,8 +8,9 @@ import { ShopContext } from "../../context/shop-context.jsx";
 export const Product = (props) => {
   const { id, productName, price, productImage, productDescription } =
     props.data;
-  const { addToCart } = useContext(ShopContext);
+  const { addToCart, cartItems } = useContext(ShopContext);
 
+  const cartItemCount = cartItems[id];
   return (
     <div className={styles.productsContainer}>
       <div className={styles.productCard}>
@@ -38,7 +39,7 @@ export const Product = (props) => {
             className={styles.addToCartButtonMain}
             onClick={() => addToCart(id)}
           >
-            <b>Add to cart</b>
+            Add to cart {cartItemCount > 0 && <>({cartItemCount})</>}
           </button>
         </div>
       </div>

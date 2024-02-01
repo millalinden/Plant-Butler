@@ -17,7 +17,7 @@
 .cartLogo {
   position: absolute;
   padding-right: 15px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 .shoppingCart {
   color: #193f1d;
@@ -26,4 +26,14 @@
 .placeholderLogo {
   width: 88px;
   margin-right: 270px;
+}
+.cartItemCount {
+  position: absolute;
+  font-size: 20px;
+  background-color: #df582e;
+  width: 25px;
+  height: 24px;
+  border-radius: 20%;
+  margin-top: -35px;
+  margin-right: 10px;
 }

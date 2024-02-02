@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShopContextProvider } from "./context/shop-context";
 import "./App.css";
 
@@ -20,16 +15,12 @@ import PlantDetective from "./Pages/PlantDetective/PlantDetective";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 
 function App() {
-
-  const location = useLocation();
-  const renderNavbar = location.pathname !== "/";
-
   return (
     <div className="app-container">
       <ShopContextProvider>
         <Router>
           <Routes>
-            <Route path="/LandingPage" element={<LandingPage />} />
+            <Route path="/" element={<LandingPage />} />
             <Route path="/" element={<Navbar />}>
               <Route path="/Shop" element={<Shop />} />
               <Route path="/CartPage" element={<CartPage />} />
@@ -37,6 +28,7 @@ function App() {
               <Route path="/Footer" element={<Footer />} />
               <Route path="/AboutUs" element={<AboutUs />} />
               <Route path="/PlantDetective" element={<PlantDetective />} />
+              <Route path="/product/:id" element={<ProductPage />} />
             </Route>
           </Routes>
         </Router>

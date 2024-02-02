@@ -8,7 +8,7 @@ const CheckoutPage = () => {
           <h2>Thank you for your order</h2>
           <p>Your order number: 834447 </p>
         </div>
-        <Link to="/LandingPage">
+        <Link to="/">
           <button className="HomePageBtn">Back to Homepage</button>
         </Link>
       </div>

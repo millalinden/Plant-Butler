@@ -12,6 +12,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop/Shop";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import PlantDetective from "./Pages/PlantDetective/PlantDetective";
+import ProductPage from "./Pages/ProductPage/ProductPage";
 
 function App() {
   return (
@@ -20,14 +21,14 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            {/* <Route path="/"/> */}
+            <Route path="/" element={<LandingPage />} />
             <Route path="/Shop" element={<Shop />} />
             <Route path="/CartPage" element={<CartPage />} />
             <Route path="/CheckoutPage" element={<CheckoutPage />} />
             <Route path="/Footer" element={<Footer />} />
             <Route path="/AboutUs" element={<AboutUs />} />
-            <Route path="/LandingPage"element={<LandingPage />} />
-            <Route path="/PlantDetective" element={<PlantDetective/>} />
+            <Route path="/PlantDetective" element={<PlantDetective />} />
+            <Route path="/product/:id" element={<ProductPage />} />
           </Routes>
         </Router>
       </ShopContextProvider>

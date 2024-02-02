@@ -47,7 +47,7 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <div className="logo">
-          <Link to="/LandingPage">
+          <Link to="/">
             <img src={placeholderLogo} className="placeholderLogo" />
           </Link>
         </div>

@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="aboutUs">
-        <Link to="/LandingPage">
+        <Link to="/">
           <button className="HomePageBtn">Back to Home page</button>
         </Link>
 

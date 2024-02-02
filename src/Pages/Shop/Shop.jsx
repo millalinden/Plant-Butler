@@ -5,6 +5,7 @@ import React from "react";
 import { PRODUCTS } from "../../products.js";
 import { Product } from "../../Components/Product/Product.jsx";
 import styles from "./Shop.module.css";
+import Footer from "../../Components/Footer/Footer";
 
 const Shop = () => {
   return (
@@ -19,6 +20,7 @@ const Shop = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

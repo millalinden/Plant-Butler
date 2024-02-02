@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CheckoutPage = () => {
   return (
     <>
@@ -6,8 +8,9 @@ const CheckoutPage = () => {
           <h2>Thank you for your order</h2>
           <p>Your order number: 834447 </p>
         </div>
-
-        <button className="HomePageBtn">Back to Homepage</button>
+        <Link to="/LandingPage">
+          <button className="HomePageBtn">Back to Homepage</button>
+        </Link>
       </div>
     </>
   );

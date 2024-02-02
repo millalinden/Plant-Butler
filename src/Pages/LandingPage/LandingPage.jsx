@@ -1,8 +1,9 @@
 // -----------------------------------------------------------------------------
 // LANDING PAGE WHERE THE USER CAN GO TO EITHER SHOP OR Q&A
 // -----------------------------------------------------------------------------
-
+import { Link } from "react-router-dom";
 import styles from "./LandingPage.module.css";
+
 function LandingPage() {
   return (
     <div>
@@ -12,9 +13,15 @@ function LandingPage() {
         <h2>Hello plant lover! </h2>
         <h2>What do you want to do today?</h2>
         <nav className={styles.landingBtnContainer}>
-          <button className={styles.landingBtn}>Shop</button>
-          <button className={styles.landingBtn}>Plant detective</button>
-          <button className={styles.landingBtn}>Keep in touch</button>
+          <Link to="/Shop">
+            <button className={styles.landingBtn}>Shop</button>
+          </Link>
+          <Link to="/PlantDetective">
+            <button className={styles.landingBtn}>Plant detective</button>
+          </Link>
+          <Link to="/AboutUs">
+            <button className={styles.landingBtn}>Keep in touch</button>
+          </Link>
         </nav>
       </main>
     </div>

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -12,7 +13,9 @@ const AboutUs = () => {
   return (
     <>
       <div className="aboutUs">
-        <button className="HomePageBtn">Back to Home page</button>
+        <Link to="/LandingPage">
+          <button className="HomePageBtn">Back to Home page</button>
+        </Link>
 
         <div id="whoWeAre" className="who">
           <h2>Who we are</h2>

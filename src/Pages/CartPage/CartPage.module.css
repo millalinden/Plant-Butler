@@ -3,7 +3,11 @@
 * {
   font-family: "Jolly Lodger", system-ui;
 }
-.checkOutBtn {
+.cart {
+  margin-top: 100px;
+}
+
+checkOutBtn {
   border-radius: 100px;
   width: 250px;
   height: 40px;
@@ -63,10 +67,10 @@
 .discountSubmit {
   font-size: 20px;
 }
-.discountInput{
+.discountInput {
   margin-bottom: 10px;
 }
-.discountMessage{
+.discountMessage {
   font-size: 20px;
   color: green;
 }

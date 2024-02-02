@@ -21,6 +21,11 @@ const CartPage = () => {
   return (
     <div className="cart">
       <div>
+        <Link to="/Shop">
+        <button>Back to shop</button>
+        </Link>
+      </div>
+      <div>
         <h1>Your cart items</h1>
       </div>
       <div className="cartItems">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useFetchApi from "../../Hooks/useFetchApi/useFetchApi";
 import styles from "./PlantDetective.module.css";
+import Footer from "../../Components/Footer/Footer";
 
 export default function PlantDetective() {
   const [plantName, setPlantName] = useState("");
@@ -59,6 +60,7 @@ export default function PlantDetective() {
           </li>
         </div>
       )}
+      <Footer />
     </div>
   );
 }

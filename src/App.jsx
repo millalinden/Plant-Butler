@@ -20,6 +20,7 @@ import PlantDetective from "./Pages/PlantDetective/PlantDetective";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 
 function App() {
+
   const location = useLocation();
   const renderNavbar = location.pathname !== "/";
 
@@ -27,16 +28,16 @@ function App() {
     <div className="app-container">
       <ShopContextProvider>
         <Router>
-          {renderNavbar && <Navbar />}
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/Shop" element={<Shop />} />
-            <Route path="/CartPage" element={<CartPage />} />
-            <Route path="/CheckoutPage" element={<CheckoutPage />} />
-            <Route path="/Footer" element={<Footer />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
-            <Route path="/PlantDetective" element={<PlantDetective />} />
-            <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/LandingPage" element={<LandingPage />} />
+            <Route path="/" element={<Navbar />}>
+              <Route path="/Shop" element={<Shop />} />
+              <Route path="/CartPage" element={<CartPage />} />
+              <Route path="/CheckoutPage" element={<CheckoutPage />} />
+              <Route path="/Footer" element={<Footer />} />
+              <Route path="/AboutUs" element={<AboutUs />} />
+              <Route path="/PlantDetective" element={<PlantDetective />} />
+            </Route>
           </Routes>
         </Router>
       </ShopContextProvider>

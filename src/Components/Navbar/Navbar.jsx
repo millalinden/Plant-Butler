@@ -30,7 +30,7 @@ import React, { useContext } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
-import placeholderLogo from "../../../images/Images/placeholderLogo.png";
+import placeholderLogo from "../../../public/Images/Logo.jpg";
 import { ShopContext } from "../../context/shop-context.jsx";
 
 export default function Navbar() {

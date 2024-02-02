@@ -22,7 +22,7 @@ function App() {
   const renderNavbar = location.pathname !== "/";
 
   return (
-    <div className="App-container">
+    <div className="app-container">
       <ShopContextProvider>
         <Router>
           {renderNavbar && <Navbar />}

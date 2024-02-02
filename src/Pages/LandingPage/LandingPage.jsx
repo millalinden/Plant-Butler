@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <div>
       <main className={styles.landing}>
-        <h1>Plants Butler</h1>
+        <h1>Plant Butlers</h1>
         <br />
         <h2>Hello plant lover! </h2>
         <h2>What do you want to do today?</h2>

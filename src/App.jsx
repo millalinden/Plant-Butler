@@ -1,11 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { ShopContextProvider } from "./context/shop-context";
 import "./App.css";
 
 import CartPage from "./Pages/CartPage/CartPage";
 import CheckoutPage from "./Pages/CheckoutPage/CheckoutPage";
-
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Footer from "./Components/Footer/Footer";
 import "./Components/Navbar/Navbar.css";
@@ -13,10 +17,15 @@ import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop/Shop";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import PlantDetective from "./Pages/PlantDetective/PlantDetective";
+import ProductPage from "./Pages/ProductPage/ProductPage";
 
 function App() {
+
+  const location = useLocation();
+  const renderNavbar = location.pathname !== "/";
+
   return (
-    <div className="App-container">
+    <div className="app-container">
       <ShopContextProvider>
         <Router>
           <Routes>

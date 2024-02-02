@@ -5,6 +5,7 @@ import "./App.css";
 
 import CartPage from "./Pages/CartPage/CartPage";
 import CheckoutPage from "./Pages/CheckoutPage/CheckoutPage";
+import LandingPage from "./Pages/LandingPage/LandingPage.jsx";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Footer from "./Components/Footer/Footer";
 import "./Components/Navbar/Navbar.css";
@@ -15,11 +16,16 @@ import PlantDetective from "./Pages/PlantDetective/PlantDetective";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 
 function App() {
+  const location = useLocation();
+
+  // Now the Navbar will only be rendered if the current route is not the landing page
+  const renderNavbar = location.pathname !== "/";
+
   return (
     <div className="App-container">
       <ShopContextProvider>
         <Router>
-          <Navbar />
+          {renderNavbar && <Navbar />}
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/Shop" element={<Shop />} />

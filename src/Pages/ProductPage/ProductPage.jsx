@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import ShopContext from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
-// import { Product } from "../../Components/Product/Product";
 import styles from "./ProductPage.module.css";
+import { Link } from "react-router-dom";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -20,6 +20,9 @@ const ProductPage = () => {
 
   return (
     <div>
+      <Link to="/Shop">
+        <button>Back to shop</button>
+      </Link>
       <div className={styles.container}>
         <img src={productImage} width={150} height={160} alt="Product Image" />
         <div className={styles.titleContainer}>
@@ -39,4 +42,3 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
-

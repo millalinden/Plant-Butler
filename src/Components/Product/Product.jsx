@@ -4,6 +4,7 @@
 import React, { useContext } from "react";
 import styles from "./Product.module.css";
 import { ShopContext } from "../../context/shop-context.jsx";
+import { Link } from "react-router-dom";
 
 
 export const Product = (props) => {
@@ -22,9 +23,15 @@ export const Product = (props) => {
           height={160}
           alt="Product Image"
         />
-        <div className={styles.descriptionCard}>
-          <p className={styles.productDescription}>{productDescription}</p>
-        </div>
+        <Link
+          className="link_default"
+          to={`/product/${id}`}
+          key={id}
+        >
+          <div className={styles.descriptionCard}>
+            <p className={styles.productDescription}>{productDescription}</p>
+          </div>
+        </Link>
         <div className={styles.cardName}>
           <p className={styles.productName}>
             <b>{productName}</b>

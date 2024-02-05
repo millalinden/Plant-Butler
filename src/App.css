@@ -1,23 +1,35 @@
-* {
-  box-sizing: border-box;
+.app-wrapper {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*
 .app-container {
-  height: 3360px;
-
   background-image: url(../public/Images/Background.jpg);
-  background-size: cover;
-}
-/*.app-container {
-  min-width: 360px;
-  height: 3360px;
-  background-image: url(../public/Images/Background.jpg);
-  background-size: 400px;
+  background-color: var(
+    --color-primary
+  ); /* in case background-image is collapsed */
+  background-size: 70%;
+  background-position: center, center;
+  min-height: 100vh;
   display: flex;
-
-  border-radius: 12px;
-
-  margin-left: 162%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  gap: 1rem;
 }
-*/
+
+@media (max-width: 64em) {
+  .app-container {
+    height: 120vh;
+    background-size: 90%;
+  }
+}
+
+@media (max-width: 36em) {
+  .app-container {
+    height: 90%;
+    background-size: 100%;
+  }
+}
+

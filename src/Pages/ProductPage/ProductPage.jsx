@@ -19,25 +19,29 @@ const ProductPage = () => {
     product;
 
   return (
-    <div>
+    <>
       <Link to="/Shop">
-        <button>Back to shop</button>
+        <button className={styles.ShopBtn}>Back to shop</button>
       </Link>
-      <div className={styles.container}>
-        <img src={productImage} width={150} height={160} alt="Product Image" />
-        <div className={styles.titleContainer}>
-          <h3 className={styles.title}>{productName}</h3>
-          <p className={styles.price}>{price} kr</p>
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <img
+            src={productImage}
+            className={styles.image}
+            alt="Product Image"
+          />
+          <div className={styles.titleContainer}>
+            <h3 className={styles.title}>{productName}</h3>
+            <p className={styles.price}>{price} kr</p>
+          </div>
+          <p className={styles.description}>{productDescription}</p>
+          <p className={styles.size}>Size: {productSize}</p>
+          <button className={styles.btn} onClick={() => addToCart(id)}>
+            <b>Add to cart</b>
+          </button>
         </div>
-        <p className={styles.description}>{productDescription}</p>
-        <p>
-          <b>Size: {productSize}</b>
-        </p>
-        <button className={styles.btn} onClick={() => addToCart(id)}>
-          <b>Add to cart</b>
-        </button>
       </div>
-    </div>
+    </>
   );
 };
 

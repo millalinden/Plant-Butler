@@ -6,7 +6,6 @@ import styles from "./Product.module.css";
 import { ShopContext } from "../../context/shop-context.jsx";
 import { Link } from "react-router-dom";
 
-
 export const Product = (props) => {
   const { id, productName, price, productImage, productDescription } =
     props.data;
@@ -14,8 +13,11 @@ export const Product = (props) => {
 
   const cartItemCount = cartItems[id];
   return (
-    <div className={styles.productsContainer}>
-      <div className={styles.productCard}>
+    <>
+      <div className={styles.cardName}>
+        <b>{productName}</b>
+      </div>
+      <div className={styles.productsContainer}>
         <img
           className={styles.productImage}
           src={productImage}
@@ -23,20 +25,12 @@ export const Product = (props) => {
           height={160}
           alt="Product Image"
         />
-        <Link
-          className="link_default"
-          to={`/product/${id}`}
-          key={id}
-        >
+        <Link className="link_default" to={`/product/${id}`} key={id}>
           <div className={styles.descriptionCard}>
             <p className={styles.productDescription}>{productDescription}</p>
           </div>
         </Link>
-        <div className={styles.cardName}>
-          <p className={styles.productName}>
-            <b>{productName}</b>
-          </p>
-        </div>
+
         <div className={styles.cardPrice}>
           <p className={styles.productPrice}>
             <b>kr{price}</b>
@@ -51,6 +45,6 @@ export const Product = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };

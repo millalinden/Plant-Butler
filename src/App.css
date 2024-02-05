@@ -5,7 +5,6 @@
 }
 
 .app-container {
-  /* background: url(../public/Images/Background.jpg); */
   background-image: url(../public/Images/Background.jpg);
   background-color: var(
     --color-primary
@@ -33,3 +32,4 @@
     background-size: 100%;
   }
 }
+

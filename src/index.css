@@ -1,5 +1,4 @@
 /* GLOBAL STYLES */
-
 @import url("Pages/CartPage/CartPage.module.css");
 @import url("Pages/CheckoutPage/CheckoutPage.module.css");
 @import url("Pages/LandingPage/LandingPage.module.css");
@@ -9,7 +8,6 @@
 @import url("Components/Product/Product.module.css");
 @import url("Components/Footer/Footer.module.css");
 @import url("Components/AboutUs/AboutUs.module.css");
-
 /* Reset */
 * {
   box-sizing: border-box;
@@ -44,13 +42,15 @@ h3 {
   font-family: "Jomhuria", serif, Arial, Helvetica, sans-serif;
   font-size: 2em;
 }
+
 ul,
 li {
   list-style: none;
 }
 p,
 strong,
-a {
+a,
+li{
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
 }
@@ -58,6 +58,7 @@ strong {
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
+
 /* Global */
 :root {
   --color-primary: hsl(60, 11%, 96%);
@@ -70,7 +71,6 @@ strong {
 html,
 body {
   margin: 0;
-  border: solid red 5px; /* for testing*/
   background-color: var(--color-primary-2);
   color: var(--color-primary-font);
 }

@@ -30,7 +30,7 @@ export default function PlantDetective() {
       <button className={styles.btn} onClick={handleFetchData}>
         search plant
       </button>
-      {loading && <p>Loading...</p>}
+      {loading && <p className={styles.loading}>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {plants && (
         <div className={styles.card}>
@@ -42,22 +42,17 @@ export default function PlantDetective() {
             height={100}
             className={styles.img}
           />
-          <li>
-            <b>Origin:</b> {plants.Origin}
-          </li>
-          <li>
-            <b>Size:</b> {plants.Size}
-          </li>
-          <h4>How to best care for {plants.Name}?</h4>
-          <li>
-            <b>Lighting:</b> {plants.Lighting}
-          </li>
-          <li>
-            <b>Watering:</b> {plants.Watering}
-          </li>
-          <li>
-            <b>Replanting:</b> {plants.Transfer}
-          </li>
+          <h3>Origin:</h3>
+          <li>{plants.Origin}</li>
+          <h3>Size:</h3>
+          <li>{plants.Size}</li>
+          <h3>How to best care for {plants.Name}?</h3>
+          <h3>Lighting:</h3>
+          <li>{plants.Lighting}</li>
+          <h3>Watering:</h3>
+          <li>{plants.Watering}</li>
+          <h3>Replanting:</h3>
+          <li>{plants.Transfer}</li>
         </div>
       )}
       <Footer />

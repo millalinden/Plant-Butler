@@ -13,8 +13,13 @@ const CartPage = () => {
   const handleClick = () => {
     const discountMessage = document.querySelector(".discountMessage");
     const textBox = document.querySelector(".discountPrompt");
+    const Price = document.querySelector(".total");
+    const discountedTotal = document.querySelector(".discountedTotal");
+
     if (textBox.value !== "") {
       discountMessage.textContent = "applied successfully";
+      discountedTotal.textContent = `kr${Math.floor(totalAmount * 0.8)}`;
+      Price.style.textDecoration = "line-through";
     }
   };
 
@@ -22,7 +27,7 @@ const CartPage = () => {
     <div className="cart">
       <div>
         <Link to="/Shop">
-        <button>Back to shop</button>
+          <button>Back to shop</button>
         </Link>
       </div>
       <div>
@@ -77,11 +82,13 @@ const CartPage = () => {
         </div>
         <div className="discountMessage"></div>
         <div className="totalCounter">
-          <p className="total">Total: kr{totalAmount}</p>
+          <p>Total:</p>
+          <p className="total"> kr{totalAmount}</p>
+          <p className="discountedTotal"></p>
         </div>
         <div className="btnContainer">
           <link rel="stylesheet" href="" />
-          <button className="checkOutBtn">
+          <button className="checkOutBtn" onClick={"window.location.reload()"}>
             <Link className="link" to="/CheckoutPage">
               Check out
             </Link>

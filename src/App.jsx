@@ -6,7 +6,7 @@ import CartPage from "./Pages/CartPage/CartPage";
 import CheckoutPage from "./Pages/CheckoutPage/CheckoutPage";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Footer from "./Components/Footer/Footer";
-import "./Components/Navbar/Navbar.module.css";
+import "./Components/Navbar/Navbar.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop/Shop";
 import LandingPage from "./Pages/LandingPage/LandingPage";

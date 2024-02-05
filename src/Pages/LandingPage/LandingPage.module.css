@@ -1,33 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
 
-.landing {
-  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
-  max-width: 50%;
-  height: 100vh;
-
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-
-.landingBtnContainer {
+.landing .landingBtnContainer {
   display: flex;
-  height: auto;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 2rem;
-  margin-top: 2rem;
+  width: 100%;
 }
-
+.landingBtnContainer {
+  justify-content: flex-start;
+  margin: 5em auto;
+  gap: 2em;
+}
 .landingBtn {
-  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
-  font-size: 2em;
-  background-color: hsl(125, 36%, 70%, 100%);
-  align-self: center;
-  width: 6em;
-  height: 2em;
+  font-family: “Jolly Lodger”, system-ui, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  background-color: var(--color-primary-btn);
+  width: 9em;
+  height: 3em;
   border-radius: 50%;
   border: none;
-  box-shadow: inset 0 5px 10px rgba(1, 35, 4, 0.2);
+  box-shadow: inset 0 -5px 10px rgba(1, 35, 4, 0.2);
   cursor: pointer;
 }
+.landingBtn:hover {
+  box-shadow: inset 0 -10px 10px rgba(0, 15, 2, 0.2);
+  background-color: var(--color-primary-btn-hover);
+  transition: 500ms;
+}
+@media (max-width: 64em) {
+  .landingBtn {
+    color: salmon; /*test*/
+    width: 6.5em;
+    height: 2em;
+  }
+} 

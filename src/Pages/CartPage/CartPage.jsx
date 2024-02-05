@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { PRODUCTS } from "../../products";
 import { ShopContext } from "../../context/shop-context.jsx";
 
-
 const CartPage = () => {
   const { cartItems, addToCart, removeFromCart, getTotalCartAmount } =
     useContext(ShopContext);
@@ -17,7 +16,7 @@ const CartPage = () => {
     const Price = document.querySelector(".total");
     const discountedTotal = document.querySelector(".discountedTotal");
 
-    if (textBox.value !== "") {
+    if (textBox.value === "fed25") {
       discountMessage.textContent = "Applied Successfully";
       discountedTotal.textContent = `kr${Math.floor(totalAmount * 0.8)}`;
       Price.style.textDecoration = "line-through";

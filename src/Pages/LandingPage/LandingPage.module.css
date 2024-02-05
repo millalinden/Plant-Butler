@@ -1,4 +1,3 @@
-
 .landing .landingBtnContainer {
   display: flex;
   flex-direction: column;
@@ -10,8 +9,8 @@
   gap: 2em;
 }
 .landingBtn {
-  font-family: “Jolly Lodger”, system-ui, Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
+  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
+  font-size: 2em;
   background-color: var(--color-primary-btn);
   width: 9em;
   height: 3em;
@@ -31,4 +30,5 @@
     width: 6.5em;
     height: 2em;
   }
-} 
+}
+

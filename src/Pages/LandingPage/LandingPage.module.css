@@ -1,6 +1,5 @@
 .landing .landingBtnContainer {
   display: flex;
-   padding-top: 10px;
   flex-direction: column;
   width: 100%;
 }
@@ -22,14 +21,11 @@
 }
 
 .logo {
-  margin-top: 30px;
-  margin-right: 10px;
   width: 80%;
 }
 .mainLogo {
   display: block;
   margin: auto;
-  text-align: center;
   opacity: 0.95;
   border-color: darkolivegreen;
   border-style: groove;

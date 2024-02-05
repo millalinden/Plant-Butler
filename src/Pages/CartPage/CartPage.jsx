@@ -14,8 +14,13 @@ const CartPage = () => {
   const handleClick = () => {
     const discountMessage = document.querySelector(".discountMessage");
     const textBox = document.querySelector(".discountPrompt");
+    const Price = document.querySelector(".total");
+    const discountedTotal = document.querySelector(".discountedTotal");
+
     if (textBox.value !== "") {
       discountMessage.textContent = "applied successfully";
+      discountedTotal.textContent = `kr${Math.floor(totalAmount * 0.8)}`;
+      Price.style.textDecoration = "line-through";
     }
   };
 
@@ -75,6 +80,7 @@ const CartPage = () => {
         <div className={styles.discountMessage}></div>
         <div className={styles.totalCounter}>
           <p className={styles.total}>Total: {totalAmount} SEK</p>
+          <p className={styles.discountedTotal}></p>
         </div>
         <Link to="/CheckoutPage">
           <button className={styles.checkOutBtn}>Check out</button>

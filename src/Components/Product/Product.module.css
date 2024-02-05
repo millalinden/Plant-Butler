@@ -1,34 +1,43 @@
 .productsContainer {
   display: flex;
-  position: relative;
-  padding-top: 50px;
-  padding-left: 50px;
-  top: 100px;
-}
-
-.productCard {
-  display: flex;
-  flex-direction: row; /* Adjusted to column layout */
+  flex-direction: row;
+  align-items: center;
   background-color: #bcd2ac;
   opacity: 0.95;
-  width: 371px;
-  height: 200px;
-  margin-left: -41px;
+  width: 60%;
+  height: 280px;
   border-style: solid;
   border-radius: 10px;
-  padding: 15px;
+  padding: 50px 100px;
+  margin-top: 100px;
 }
+/*
+.productCard {
+  display: flex;
+  justify-content: center;
+  background-color: #bcd2ac;
+  opacity: 0.95;
+  width: 60%;
+  height: 280px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 50px 60px;
+}
+*/
 .descriptionCard {
+  font-size: 27px;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  padding: 50px 20px;
 }
 
-.productDescription {
+.styles.productDescription {
   padding-top: 10px;
   padding-left: 10px;
-  width: 300px;
   font-size: 15px;
-  width: 190px;
+  width: 150px;
+  height: auto;
 }
 .productImage {
   border-style: solid;
@@ -36,19 +45,16 @@
   border-radius: 10px;
 }
 
-.cardName {
-  position: absolute;
-  margin-left: 165px;
-  margin-top: -20px;
+.styles.cardName {
+  color: #df582e;
 }
 
-.cardPrice {
-  position: absolute;
-  margin-left: 170px;
-  margin-top: 130px;
+.styles.cardPrice {
+  display: flex;
+  justify-content: center;
 }
 
-.addToCartButton {
+.styles.addToCartButton {
   position: absolute;
   margin-left: 230px;
   margin-top: 140px;
@@ -62,7 +68,7 @@
   border-radius: 15px;
   text-decoration: none;
 }
-.addToCartButtonMain {
+.styles.addToCartButtonMain {
   background-color: #df582e;
   border: none;
 }

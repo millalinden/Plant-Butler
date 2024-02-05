@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .app-container {
   background-image: url(../public/Images/Background.jpg);
   background-color: var(
@@ -34,9 +35,11 @@
     background-size: 90%;
   }
 }
+
 @media (max-width: 36em) {
   .app-container {
     height: 90%;
     background-size: 100%;
   }
 }
+

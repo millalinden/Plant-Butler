@@ -7,9 +7,8 @@
 @import url("Components/Product/Product.module.css");
 @import url("Components/Footer/Footer.module.css");
 @import url("Components/AboutUs/AboutUs.module.css");
-/* @import url("./CartPage.css"); */
-/* Reset */
 
+/* Reset */
 
 * {
   box-sizing: border-box;

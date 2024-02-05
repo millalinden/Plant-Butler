@@ -1,0 +1,214 @@
+/* GLOBAL CART STYLES */
+
+.cart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-container {
+  border-radius: 6%;
+  font-size: 0.5rem;
+  width: 85%;
+  padding: 2rem;
+  background-color: var(--color-primary);
+  opacity: 1;
+}
+
+
+/* CART ITEM STYLING */
+
+.cartItem{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(125, 36%, 70%, 0.483);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.productName{
+  font-size: 0.6rem;
+}
+
+.item-price{
+  font-size: 0.6rem;
+}
+
+.description{
+  flex-wrap: wrap;
+  width: 10rem;
+}
+
+.img{
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+}
+
+.plusBtn {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-primary-2);
+}
+.minusBtn {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-primary-2);
+}
+
+.quantity {
+  background-color: var(--color-primary-2);
+  width: 1.5rem;
+  height: 1.3rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* CART FIELDS FROM START */
+
+.discountPrompt {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  border: solid var(--color-primary-2);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 0.6rem;
+  margin-right: 0.5rem;
+}
+.discountSubmit {
+  font-size: 0.6rem;
+  color: white;
+  background-color: #ae4841;
+  border-radius: 10rem;
+  border: none;
+  padding: 0.5rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+.discountInput {
+  margin-bottom: 1rem;
+  padding: 1;
+}
+.discountMessage {
+  font-size: 0.8rem;
+  color: var(--color-primary-2);
+  margin: 0.5rem;
+}
+
+.cart-btn {
+  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: var(--color-primary-btn);
+  width: 9em;
+  height: 3em;
+  border-radius: 50%;
+  border: none;
+  box-shadow: inset 0 -5px 10px rgba(1, 35, 4, 0.2);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.cart-btn:hover {
+  box-shadow: inset 0 -10px 10px rgba(0, 15, 2, 0.2);
+  background-color: var(--color-primary-btn-hover);
+  transition: 500ms;
+}
+
+
+.checkOutBtn {
+  color: white;
+  background-color: #ae4841;
+  border-radius: 10rem;
+  border: none;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 0.8rem;
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+
+.totalCounter {
+  text-align: center;
+}
+.total {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+  .cart-container {
+    border-radius: 6%;
+    font-size: 0.5rem;
+    background-color: var(--color-primary);
+    opacity: 1rem;
+    width: 85%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    margin-bottom: 2rem;
+  }
+
+  .cartItem{
+    margin: 1rem;
+    gap: 5em;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(125, 36%, 70%, 0.483);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  .img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .description{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+  }
+  .productName{
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+
+  .item-price{
+    font-size: 0.8rem;
+  }
+  .discountSubmit {
+    font-size: 0.8rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;  }
+
+  .discountInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .discountPrompt {
+    font-size: 0.8rem;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  .total,
+  .totalCounter {
+    font-size: 1rem;
+  }
+}

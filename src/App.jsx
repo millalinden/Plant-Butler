@@ -6,14 +6,14 @@ import CartPage from "./Pages/CartPage/CartPage";
 import CheckoutPage from "./Pages/CheckoutPage/CheckoutPage";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Footer from "./Components/Footer/Footer";
-import "./Components/Navbar/Navbar.module.css";
+import "./Components/Navbar/Navbar.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop/Shop";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import PlantDetective from "./Pages/PlantDetective/PlantDetective";
 import ProductPage from "./Pages/ProductPage/ProductPage";
-import ProductData from "./productData.json";
-import ProductFilter from "./Components/productFilter/productFilter";
+import "./Pages/CartPage/CartPage.css"
+
 
 function App() {
   return (

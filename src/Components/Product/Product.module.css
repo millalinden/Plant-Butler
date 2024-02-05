@@ -32,7 +32,7 @@
   padding: 50px 20px;
 }
 
-.styles.productDescription {
+.productDescription {
   padding-top: 10px;
   padding-left: 10px;
   font-size: 15px;
@@ -45,16 +45,16 @@
   border-radius: 10px;
 }
 
-.styles.cardName {
+.cardName {
   color: #df582e;
 }
 
-.styles.cardPrice {
+.cardPrice {
   display: flex;
   justify-content: center;
 }
 
-.styles.addToCartButton {
+.addToCartButton {
   position: absolute;
   margin-left: 230px;
   margin-top: 140px;
@@ -68,7 +68,7 @@
   border-radius: 15px;
   text-decoration: none;
 }
-.styles.addToCartButtonMain {
+.addToCartButtonMain {
   background-color: #df582e;
   border: none;
 }

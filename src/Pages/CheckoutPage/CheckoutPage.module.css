@@ -3,15 +3,22 @@ body {
 }
 
 .HomePageBtn {
-  color: white;
-  background-color: #ae4841;
-  border-radius: 10rem;
+  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: var(--color-primary-btn);
+  width: 9em;
+  height: 3em;
+  border-radius: 50%;
   border: none;
-  padding: 0.5rem 4rem 0.5rem 4rem;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 0.8rem;
-  margin-top: 0.9rem;
+  box-shadow: inset 0 -5px 10px rgba(1, 35, 4, 0.2);
   cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.HomePageBtn:hover {
+  box-shadow: inset 0 -10px 10px rgba(0, 15, 2, 0.2);
+  background-color: var(--color-primary-btn-hover);
+  transition: 500ms;
 }
 
 .popUpMessage {
@@ -31,17 +38,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .HomePageBtn {
-    color: white;
-    background-color: #ae4841;
-    border-radius: 10rem;
-    border: none;
-    padding: 0.5rem 4rem 0.5rem 4rem;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-size: 0.8rem;
-    margin-top: 0.9rem;
-    cursor: pointer;
-  }
   .popUpMessage {
     font-size: 1.5rem;
     margin: 2rem;

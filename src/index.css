@@ -4,22 +4,19 @@
 @import url("Pages/CheckoutPage/CheckoutPage.module.css");
 @import url("Components/Footer/Footer.module.css");
 @import url("Components/AboutUs/AboutUs.module.css");
+@import url(./Components/Navbar/Navbar.css);
 
-/* Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-/* img {
-  display: block;
-  max-width: 100%;
-} */
+@import url(./Pages/Shop/Shop.module.css);
+
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  /*min-width: 1000px;*/
-  min-height: 100vh;
-  background-color: blueviolet;
+  justify-content: center;
+
+  background-image: url(../public/Images/Background.jpg);
+  background-size: auto;
+  background-size: 1700px 3100px;
+}
+
+#root {
+  width: 90%;
 }

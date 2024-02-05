@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { Link } from "react-router-dom";
+import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -12,13 +13,13 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="containerHomePageBtn">
+      <div className={styles.containerHomePageBtn}>
         <Link to="/">
-          <button className="HomePageBtn">Back to Home page</button>
+          <button className={styles.HomePageBtn}>Back to Home page</button>
         </Link>
       </div>
-      <div className="aboutUs">
-        <section id="whoWeAre" className="who">
+      <div className={styles.aboutUs}>
+        <section id="whoWeAre" className={styles.who}>
           <h2>Who we are</h2>
           <p>
             We are <strong>Maryana, Milla, Petra, and Setayesh</strong> — a team
@@ -34,7 +35,7 @@ const AboutUs = () => {
             something we can truly be proud of.
           </p>
         </section>
-        <section id="whereToFindUs" className="where">
+        <section id="whereToFindUs" className={styles.where}>
           <h2>Where to find us</h2>
           <p>Hyper Island</p>
           <a
@@ -44,7 +45,7 @@ const AboutUs = () => {
             Virkesvägen 2, Stockholm 120 30
           </a>
         </section>
-        <section className="how">
+        <section className={styles.who}>
           <Element name="keepInTouch">
             <h2>Keep in touch</h2>
           </Element>

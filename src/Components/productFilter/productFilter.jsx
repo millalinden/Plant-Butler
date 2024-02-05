@@ -12,10 +12,12 @@ function ProductFilter() {
 
   const handleSizeClick = (size) => {
     setSelectedSize(size);
-
+   
     const filteredProducts = size
+
       ? ProductData.filter((product) => product.productSize === size)
       : ProductData;
+
 
     setItems(filteredProducts);
   };
@@ -25,13 +27,16 @@ function ProductFilter() {
   };
 
   return (
-    <div className="container mt-5">
-      <h1>Product filter</h1>
+    <div className="filter-container  mt-5">
+      <h1 className="filter-h1">Product filter</h1>
       <div className="buttonRow">
         {uniqueSizes.map((size) => (
           <button
+            className="sizeButtons"
             key={size}
+
             className={`col-md-${12 / uniqueSizes.length}`}
+
             onClick={() => handleSizeClick(size)}
           >
             {size}

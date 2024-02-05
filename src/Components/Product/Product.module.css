@@ -1,51 +1,50 @@
 .productsContainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+
   background-color: #bcd2ac;
   opacity: 0.95;
   width: 60%;
   height: 280px;
   border-style: solid;
   border-radius: 10px;
-  padding: 50px 100px;
+  padding: 40px;
+
   margin-top: 100px;
+  margin: auto;
 }
 
 .descriptionCard {
-  font-size: 27px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 40px;
-  padding: 50px 20px;
+  margin-bottom: 50px;
+
+  margin-right: 0;
+  padding: 0;
+  color: black;
 }
 
 .productDescription {
-  padding-top: 10px;
-  padding-left: 10px;
   font-size: 15px;
-  width: 150px;
-  height: auto;
 }
 .productImage {
   border-style: solid;
   border-color: #2f3d24;
   border-radius: 10px;
+  margin-right: 30px;
 }
 
 .cardName {
   color: #df582e;
+  font-size: x-large;
+  margin-top: 40px;
 }
 
 .cardPrice {
-  display: flex;
-  justify-content: center;
+  margin-top: 180px;
 }
 
 .addToCartButton {
   position: absolute;
+  margin-top: 170px;
   margin-left: 230px;
-  margin-top: 140px;
   background-color: #df582e;
   border: 2px solid #2f3d24;
   min-width: 100px;
@@ -59,4 +58,29 @@
 .addToCartButtonMain {
   background-color: #df582e;
   border: none;
+}
+
+@media (max-width: 802px) {
+  .productsContainer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: auto;
+    margin: auto;
+    
+  }
+  .addToCartButton {
+    margin: auto;
+    text-align: center;
+    margin-top: 25rem;
+  }
+  .productImage {
+    margin: auto ;
+    padding: auto;
+  }
+  .descriptionCard{
+    
+  
+  }
 }

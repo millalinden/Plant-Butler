@@ -1,5 +1,6 @@
 .landing .landingBtnContainer {
   display: flex;
+  padding-top: 10px;
   flex-direction: column;
   width: 100%;
 }
@@ -19,6 +20,25 @@
   box-shadow: inset 0 -5px 10px rgba(1, 35, 4, 0.2);
   cursor: pointer;
 }
+
+.logo {
+  display: block;
+  padding-top: 13px;
+  margin: auto;
+  width: 87%;
+}
+.mainLogo {
+  display: block;
+  margin: auto;
+  opacity: 0.95;
+  border-color: darkolivegreen;
+  border-style: groove;
+  width: 250px;
+  height: 240px;
+  border-radius: 100%;
+  background-color: white;
+}
+
 .landingBtn:hover {
   box-shadow: inset 0 -10px 10px rgba(0, 15, 2, 0.2);
   background-color: var(--color-primary-btn-hover);
@@ -31,4 +51,3 @@
     height: 2em;
   }
 }
-

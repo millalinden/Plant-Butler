@@ -1,5 +1,4 @@
 /* GLOBAL STYLES */
-@import url("Pages/CartPage/CartPage.module.css");
 @import url("Pages/CheckoutPage/CheckoutPage.module.css");
 @import url("Pages/LandingPage/LandingPage.module.css");
 @import url("Pages/PlantDetective/PlantDetective.module.css");
@@ -8,7 +7,9 @@
 @import url("Components/Product/Product.module.css");
 @import url("Components/Footer/Footer.module.css");
 @import url("Components/AboutUs/AboutUs.module.css");
+
 /* Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,13 +25,12 @@ h1,
 h2 {
   font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
   font-size: 4.5em;
-  margin-top: 2em;
+  /* margin-top: 2em; */
 }
 
 @media (max-width: 64em) {
   h1 {
     margin-top: 1em;
-    color: red; /*for testing*/
   }
 }
 h2 {
@@ -38,11 +38,16 @@ h2 {
   margin: auto;
 }
 
-h3 {
+h3,
+h4 {
   font-family: "Jomhuria", serif, Arial, Helvetica, sans-serif;
   font-size: 2em;
 }
 
+h4 {
+  font-size: 2.5em;
+  color: var(--color-primary-2);
+}
 ul,
 li {
   list-style: none;
@@ -50,12 +55,11 @@ li {
 p,
 strong,
 a,
-li{
+li {
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
 }
 strong {
-  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
 

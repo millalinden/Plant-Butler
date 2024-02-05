@@ -1,4 +1,4 @@
-.who {
+/* .who {
   background-color: white;
   border-radius: 6%;
   width: 50%;
@@ -28,4 +28,40 @@ a {
   color: green;
   margin-bottom: 15px;
   font-size: 30px;
+} */
+
+.containerHomePageBtn {
+  margin-top: 6em;
+}
+
+.HomePageBtn {
+  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: var(--color-primary-btn);
+  width: 9em;
+  height: 3em;
+  border-radius: 50%;
+  border: none;
+  box-shadow: inset 0 -5px 10px rgba(1, 35, 4, 0.2);
+  cursor: pointer;
+}
+
+.HomePageBtn:hover {
+  box-shadow: inset 0 -10px 10px rgba(0, 15, 2, 0.2);
+  background-color: var(--color-primary-btn-hover);
+  transition: 500ms;
+}
+.aboutUs {
+  background-color: var(--color-primary);
+  opacity: 0.9;
+  width: 85%;
+  align-self: center;
+  border-radius: 10%;
+}
+.who,
+.how,
+.where {
+  background-color: var(--color-primary);
+  width: 80%;
+  margin: 3em auto;
 }

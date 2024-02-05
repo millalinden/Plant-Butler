@@ -2,6 +2,11 @@
 
 @import url("Pages/CartPage/CartPage.module.css");
 @import url("Pages/CheckoutPage/CheckoutPage.module.css");
+@import url("Pages/LandingPage/LandingPage.module.css");
+@import url("Pages/PlantDetective/PlantDetective.module.css");
+@import url("Pages/ProductPage/ProductPage.module.css");
+@import url("Pages/Shop/Shop.module.css");
+@import url("Components/Product/Product.module.css");
 @import url("Components/Footer/Footer.module.css");
 @import url("Components/AboutUs/AboutUs.module.css");
 
@@ -11,15 +16,61 @@
   margin: 0;
   padding: 0;
 }
-/* img {
+
+img {
   display: block;
   max-width: 100%;
-} */
+}
+
+h1,
+h2 {
+  font-family: "Jolly Lodger", system-ui, Arial, Helvetica, sans-serif;
+  font-size: 4.5em;
+  margin-top: 2em;
+}
+
+@media (max-width: 64em) {
+  h1 {
+    margin-top: 1em;
+    color: red; /*for testing*/
+  }
+}
+h2 {
+  font-size: 3em;
+  margin: auto;
+}
+
+h3 {
+  font-family: "Jomhuria", serif, Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+ul,
+li {
+  list-style: none;
+}
+p,
+strong,
+a {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+strong {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+/* Global */
+:root {
+  --color-primary: hsl(60, 11%, 96%);
+  --color-primary-2: hsl(142, 16%, 32%);
+  --color-primary-font: hsl(126, 94%, 6%);
+  --color-primary-btn: hsl(125, 36%, 70%, 100%);
+  --color-primary-btn-hover: rgb(107, 149, 111);
+  --color-cta-btn: hsl(14, 73%, 53%);
+}
+html,
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  /*min-width: 1000px;*/
-  min-height: 100vh;
-  background-color: blueviolet;
+  border: solid red 5px; /* for testing*/
+  background-color: var(--color-primary-2);
+  color: var(--color-primary-font);
 }

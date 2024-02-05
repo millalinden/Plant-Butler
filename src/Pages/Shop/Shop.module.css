@@ -1,3 +1,10 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  
+}
+
+.productFilter{
+  text-align: center;
+  
 }

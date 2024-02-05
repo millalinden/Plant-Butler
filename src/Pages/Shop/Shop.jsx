@@ -38,7 +38,7 @@ const Shop = () => {
 
   return (
     <div className={styles.shop}>
-      <div className="productFilter">
+      <div className={styles.productFilter}>
         <ProductFilter />
       </div>
       <div className={styles.shopTitle}></div>

@@ -8,15 +8,16 @@ function ProductFilter() {
   const [selectedSize, setSelectedSize] = useState(null);
   const navigate = useNavigate();
 
-  const uniqueSizes = [...new Set(items.map((val) => val.productSize))];
+  const uniqueSizes = [...new Set(ProductData.map((val) => val.productSize))];
 
   const handleSizeClick = (size) => {
     setSelectedSize(size);
    
     const filteredProducts = size
-    
-      ? items.filter((product) => product.productSize === size)
-      : [];
+
+      ? ProductData.filter((product) => product.productSize === size)
+      : ProductData;
+
 
     setItems(filteredProducts);
   };
@@ -33,6 +34,9 @@ function ProductFilter() {
           <button
             className="sizeButtons"
             key={size}
+
+            className={`col-md-${12 / uniqueSizes.length}`}
+
             onClick={() => handleSizeClick(size)}
           >
             {size}

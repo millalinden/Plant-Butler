@@ -23,7 +23,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/" element={<Navbar />}>
+              <Route path="/" element={<Navbar />} >
                 <Route path="/Shop" element={<Shop />} />
                 <Route path="/CartPage" element={<CartPage />} />
                 <Route path="/CheckoutPage" element={<CheckoutPage />} />

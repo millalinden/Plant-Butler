@@ -8,6 +8,7 @@ import styles from "./Shop.module.css";
 import Footer from "../../Components/Footer/Footer";
 import ScrollToTopButton from "../../Components/ScrolltotopButton/Scroll-to-top-Button.jsx";
 import ProductFilter from "../../Components/productFilter/productFilter.jsx";
+
 const Shop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
@@ -22,10 +23,12 @@ const Shop = () => {
     };
 
     const popupTimer = setTimeout(() => {
-      setShowPopup(true);
+      const popupShownBefore = localStorage.getItem("popupShown");
+      if (!popupShownBefore) {
+        setShowPopup(true);
+        localStorage.setItem("popupShown", "true");
+      }
     }, 3000);
-
-    console.log("Popup Timer Set");
 
     window.addEventListener("scroll", handleScroll);
 
@@ -61,11 +64,11 @@ const Shop = () => {
       </div>
       {showTopBtn && <ScrollToTopButton onClick={goToTop} />}
       {showPopup && (
-        <div className={styles.overlay}>
-          <div className={styles.modal}>
+        <div className={styles.overlay} onClick={closePopup}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
             <div className={styles.modalContent}>
-              <p className={styles.modalMessage}>
-                Hello plant lover! Your exclusive discount code: <b>fed25</b>
+              <p>
+                Hello plant lover! Your exclusive discount code is:<b>fed25</b>!
               </p>
               <button onClick={closePopup}>Close</button>
             </div>

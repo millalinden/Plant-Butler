@@ -1,3 +1,4 @@
+
 import product1 from "../src/Assets/ProductImages/S citrus-krukvaext.avif";
 import product2 from "../src/Assets/ProductImages/S clusia.avif";
 import product3 from "../src/Assets/ProductImages/S alocasia-krukvaext.avif";
@@ -10,6 +11,7 @@ import product9 from "../src/Assets/ProductImages/L dypsis-lutescens.avif";
 import product10 from "../src/Assets/ProductImages/XL strelitzia.avif";
 import product11 from "../src/Assets/ProductImages/XL pachira-aquatica.avif";
 import product12 from "../src/Assets/ProductImages/XL ficus-elastica-robusta.avif";
+
 
 export const PRODUCTS = [
   {

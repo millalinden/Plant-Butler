@@ -11,6 +11,10 @@ export default function PlantDetective() {
     fetchData(plantName);
   };
 
+  const getSecureImageURL = (imageUrl) => {
+    return imageUrl.replace(/^http:\/\//i, 'https://');
+  };
+
   return (
     <>
       <section className={styles.wrapper}>
@@ -40,7 +44,7 @@ export default function PlantDetective() {
             <div className={styles.card}>
               <h3>{plants.Name}</h3>
               <img
-                src={plants.Image}
+                src={getSecureImageURL(plants.Image)}
                 alt={plants.Name}
                 width={100}
                 height={100}

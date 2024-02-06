@@ -36,3 +36,26 @@
   border-radius: 15px;
   background-color: #bcd2ac;
 }
+@media (max-width: 570px) {
+  .filter-h1 {
+    display: none;
+  }
+  .filter-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonRow {
+    margin: auto;
+    width: auto;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 370px) {
+  .sizeButtons {
+    padding: auto;
+    font-size: 13px;
+    margin: auto;
+  }
+}

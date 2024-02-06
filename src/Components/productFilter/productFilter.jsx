@@ -12,12 +12,10 @@ function ProductFilter() {
 
   const handleSizeClick = (size) => {
     setSelectedSize(size);
-   
-    const filteredProducts = size
 
+    const filteredProducts = size
       ? ProductData.filter((product) => product.productSize === size)
       : ProductData;
-
 
     setItems(filteredProducts);
   };
@@ -34,9 +32,6 @@ function ProductFilter() {
           <button
             className="sizeButtons"
             key={size}
-
-            className={`col-md-${12 / uniqueSizes.length}`}
-
             onClick={() => handleSizeClick(size)}
           >
             {size}

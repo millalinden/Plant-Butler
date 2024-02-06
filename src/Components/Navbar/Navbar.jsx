@@ -6,7 +6,7 @@ import React, { useContext } from "react";
 import "./Navbar.css";
 import { Link, Outlet } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
-import placeholderLogo from "../../../public/Images/Logo.jpg";
+import placeholderLogo from "../../../src/Assets/Images/Logo.jpg";
 import { ShopContext } from "../../context/shop-context.jsx";
 
 export default function Navbar() {

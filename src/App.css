@@ -5,7 +5,7 @@
 }
 
 .app-container {
-  background-image: url(../public/Images/Background.jpg);
+  background-image: url(./Assets/Images/Background.jpg);
   background-color: var(
     --color-primary
   ); /* in case background-image is collapsed */
@@ -21,7 +21,6 @@
 
 @media (max-width: 64em) {
   .app-container {
-    
     background-size: 90%;
   }
 }

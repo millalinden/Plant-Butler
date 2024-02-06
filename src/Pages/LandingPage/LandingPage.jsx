@@ -11,7 +11,7 @@ function LandingPage() {
         <div className={styles.mainLogo}>
           <img
             className={styles.logo}
-            src="../../../public/Images/logoVector.png"
+            src="../../../src/Assets/Images/logoVector.png"
           />
         </div>
 

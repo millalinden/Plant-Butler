@@ -1,15 +1,17 @@
-import product1 from "../public/ProductImages/S citrus-krukvaext.avif";
-import product2 from "../public/ProductImages/S clusia.avif";
-import product3 from "../public/ProductImages/S alocasia-krukvaext.avif";
-import product4 from "../public/ProductImages/M schefflera-arboricola.avif";
-import product5 from "../public/ProductImages/M dracaena-marginata.avif";
-import product6 from "../public/ProductImages/M alocasia-amazonica.avif";
-import product7 from "../public/ProductImages/L polyscias.avif";
-import product8 from "../public/ProductImages/L euphorbia-acrurensis.avif";
-import product9 from "../public/ProductImages/L dypsis-lutescens.avif";
-import product10 from "../public/ProductImages/XL strelitzia.avif";
-import product11 from "../public/ProductImages/XL pachira-aquatica.avif";
-import product12 from "./assets/product-images/XL ficus-elastica-robusta.avif";
+
+import product1 from "../src/Assets/ProductImages/S citrus-krukvaext.avif";
+import product2 from "../src/Assets/ProductImages/S clusia.avif";
+import product3 from "../src/Assets/ProductImages/S alocasia-krukvaext.avif";
+import product4 from "../src/Assets/ProductImages/M schefflera-arboricola.avif";
+import product5 from "../src/Assets/ProductImages/M dracaena-marginata.avif";
+import product6 from "../src/Assets/ProductImages/M alocasia-amazonica.avif";
+import product7 from "../src/Assets/ProductImages/L polyscias.avif";
+import product8 from "../src/Assets/ProductImages/L euphorbia-acrurensis.avif";
+import product9 from "../src/Assets/ProductImages/L dypsis-lutescens.avif";
+import product10 from "../src/Assets/ProductImages/XL strelitzia.avif";
+import product11 from "../src/Assets/ProductImages/XL pachira-aquatica.avif";
+import product12 from "../src/Assets/ProductImages/XL ficus-elastica-robusta.avif";
+
 
 export const PRODUCTS = [
   {

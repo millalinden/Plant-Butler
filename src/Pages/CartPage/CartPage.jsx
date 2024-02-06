@@ -71,12 +71,14 @@ const CartPage = () => {
                 type="text"
                 placeholder="Enter discount code"
               />
-              <input
+              <button
                 className="discountSubmit"
                 type="submit"
                 value="Apply"
                 onClick={handleClick}
-              />
+              >
+                Apply
+              </button>
             </div>
             <div className="discountMessage"></div>
             <div className="totalCounter">

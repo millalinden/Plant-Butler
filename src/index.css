@@ -63,6 +63,9 @@ strong {
   font-weight: bolder;
 }
 
+button {
+  cursor: pointer;
+}
 /* Global */
 :root {
   --color-primary: hsl(60, 11%, 96%);
@@ -70,7 +73,7 @@ strong {
   --color-primary-font: hsl(126, 94%, 6%);
   --color-primary-btn: hsl(125, 36%, 70%, 100%);
   --color-primary-btn-hover: rgb(107, 149, 111);
-  --color-cta-btn: hsl(14, 73%, 53%);
+  --color-cta-btn: hsl(4, 46%, 47%);
 }
 html,
 body {

@@ -16,11 +16,10 @@
   opacity: 1;
 }
 
-
 /* CART ITEM STYLING */
 
-.cartItem{
-  display:flex;
+.cartItem {
+  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
@@ -32,33 +31,26 @@
   margin-bottom: 1rem;
 }
 
-.productName{
+.productName {
   font-size: 0.6rem;
 }
 
-.item-price{
+.item-price {
   font-size: 0.6rem;
 }
 
-.description{
+.description {
   flex-wrap: wrap;
   width: 10rem;
 }
 
-.img{
+.img {
   width: 50px;
   height: 50px;
   margin-top: 1rem;
 }
 
-.plusBtn {
-  border: none;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-  font-size: 1rem;
-  color: var(--color-primary-2);
-}
+.plusBtn,
 .minusBtn {
   border: none;
   padding: 0;
@@ -88,15 +80,15 @@
   margin-right: 0.5rem;
 }
 .discountSubmit {
-  font-size: 0.6rem;
-  color: white;
-  background-color: #ae4841;
-  border-radius: 10rem;
+  color: var(--color-primary);
+  background-color: var(--color-cta-btn);
+  border-radius: 3em;
   border: none;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-top: 0.9rem;
-  cursor: pointer;
+  font-size: 1rem;
+  margin: 2em auto;
+  text-decoration: none;
 }
 .discountInput {
   margin-bottom: 1rem;
@@ -127,17 +119,16 @@
   transition: 500ms;
 }
 
-
 .checkOutBtn {
-  color: white;
-  background-color: #ae4841;
-  border-radius: 10rem;
+  color: var(--color-primary);
+  background-color: var(--color-cta-btn);
+  border-radius: 3em;
   border: none;
-  padding: 0.5rem 4rem 0.5rem 4rem;
+  padding: 1rem 3rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 0.8rem;
-  margin-top: 0.9rem;
-  cursor: pointer;
+  font-size: 1rem;
+  margin: 2em auto;
+  text-decoration: none;
 }
 
 .totalCounter {
@@ -165,11 +156,11 @@
     align-items: center;
   }
 
-  .title{
+  .title {
     margin-bottom: 2rem;
   }
 
-  .cartItem{
+  .cartItem {
     margin: 1rem;
     gap: 5em;
     width: 90%;
@@ -179,29 +170,30 @@
     padding: 1rem;
   }
 
-  .img{
+  .img {
     width: 100px;
     height: 100px;
   }
 
-  .description{
+  .description {
     display: flex;
     flex-direction: row;
     width: 15rem;
   }
-  .productName{
+  .productName {
     width: 5rem;
     font-size: 0.8rem;
   }
 
-  .item-price{
+  .item-price {
     font-size: 0.8rem;
   }
   .discountSubmit {
     font-size: 0.8rem;
-    padding: 0.5rem 3rem 0.5rem 3rem;  }
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
 
-  .discountInput{
+  .discountInput {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -9,7 +9,7 @@ import product8 from "../public/ProductImages/L euphorbia-acrurensis.avif";
 import product9 from "../public/ProductImages/L dypsis-lutescens.avif";
 import product10 from "../public/ProductImages/XL strelitzia.avif";
 import product11 from "../public/ProductImages/XL pachira-aquatica.avif";
-import product12 from "../public/ProductImages/XL ficus-elastica-robusta.avif";
+import product12 from "./assets/product-images/XL ficus-elastica-robusta.avif";
 
 export const PRODUCTS = [
   {

@@ -52,9 +52,9 @@ const Shop = () => {
         <ProductFilter />
       </div>
       <div className={styles.shopTitle}></div>
-      <div className="products">
+      <div className={styles.products}>
         {PRODUCTS.map((product) => (
-          <div key={product.id}>
+          <div key={product.id} className={styles.wrapperProduct}>
             <Product data={product} />
           </div>
         ))}

@@ -2,9 +2,15 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+.wrapperProduct{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 .modal {
   position: fixed;
-  background-color: orangered;
+  background-color: #AE4841;
   width: 330px;
   height: 330px;
   border-radius: 100%;
@@ -37,7 +43,7 @@
 
 .modalContent button {
   background-color: white;
-  color: orangered;
+  color: #AE4841;
   border: none;
   margin-top: 20px;
   padding: 10px 20px;

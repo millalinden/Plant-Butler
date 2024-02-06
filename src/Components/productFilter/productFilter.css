@@ -23,7 +23,6 @@
 .buttonRow {
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
 }
 .sizeButtons {
@@ -34,7 +33,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 15px;
-  background-color: #bcd2ac;
+  background-color: #9ec086;
+  cursor: pointer;
+  border: none;
 }
 @media (max-width: 570px) {
   .filter-h1 {

@@ -138,6 +138,11 @@
   font-size: 0.8rem;
 }
 
+.link{
+  text-decoration: none;
+  color: white;
+}
+
 @media (min-width: 1024px) {
   .cart-container {
     border-radius: 6%;

@@ -21,7 +21,7 @@
 
 @media (max-width: 64em) {
   .app-container {
-    height: 120vh;
+    
     background-size: 90%;
   }
 }

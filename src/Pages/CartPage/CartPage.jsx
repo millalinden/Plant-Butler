@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { PRODUCTS } from "../../products";
-import { ShopContext } from "../../context/shop-context.jsx";
+import ShopContext from "../../context/shop-context";
 
 const CartPage = () => {
   const { cartItems, addToCart, removeFromCart, getTotalCartAmount } =

@@ -4,7 +4,7 @@
 .scrollToTop {
   position: fixed;
   bottom: 40px;
-  right: 660px;
+  right: 1rem;
   z-index: 100;
   background-color: #7ebc90;
   border: 2px solid darkgreen;
@@ -23,6 +23,7 @@
   color: #551b54;
   border: 2px solid #551b54;
 }
+
 @keyframes movebtn {
   0% {
     transform: translateY(0px);
@@ -38,5 +39,11 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .scrollToTop {
+    right: 12rem;
   }
 }

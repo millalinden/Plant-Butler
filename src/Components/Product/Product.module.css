@@ -64,7 +64,6 @@
   background-color: var(--color-cta-btn);
   border: none;
   text-align: center;
-  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -72,7 +71,7 @@
     flex-direction: row;
   }
 
-  .addToCartButtonMain{
+  .addToCartButtonMain {
     padding: 0.5;
   }
 

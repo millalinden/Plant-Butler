@@ -1,4 +1,4 @@
-.mainLogo {
+/* .mainLogo {
   display: block;
   margin: auto;
   opacity: 0.95;
@@ -8,6 +8,10 @@
   height: 240px;
   border-radius: 100%;
   background-color: white;
+} */
+
+h1 {
+  margin-top: 3em;
 }
 
 .landing .landingBtnContainer {

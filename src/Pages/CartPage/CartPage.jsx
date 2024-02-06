@@ -4,7 +4,7 @@ import { PRODUCTS } from "../../products";
 import ShopContext from "../../context/shop-context";
 
 const CartPage = () => {
-  const { cartItems, addToCart, removeFromCart, getTotalCartAmount } =
+  const { cartItems, addToCart, removeFromCart, getTotalCartAmount, setCheckoutClicked } =
     useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
@@ -38,7 +38,7 @@ const CartPage = () => {
               const quantity = cartItems[product.id];
               return (
                 <div key={product.id} className="cartItem">
-                  <img src={product.productImage} className="img" />
+                  <img src={product.productImage} className="img" alt={product.productName} />
                   <div className="description">
                     <p className="productName">{product.productName}</p>
                     <p className="item-price">{product.price} SEK</p>
@@ -87,8 +87,10 @@ const CartPage = () => {
               <p className="discountedTotal"></p>
             </div>
             <div className="btnContainer">
-              <Link className="link" to="/CheckoutPage">
-                <button className="checkOutBtn">Check out</button>
+              <Link to="/CheckoutPage">
+                <button className="checkOutBtn" onClick={() => setCheckoutClicked(true)}>
+                  Check out
+                </button>
               </Link>
             </div>
           </div>
@@ -99,3 +101,4 @@ const CartPage = () => {
 };
 
 export default CartPage;
+

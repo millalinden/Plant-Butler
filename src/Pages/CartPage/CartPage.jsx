@@ -87,14 +87,14 @@ const CartPage = () => {
               <p className="discountedTotal"></p>
             </div>
             <div className="btnContainer">
-              <button
-                className="checkOutBtn"
-                onClick={() => window.location.reload()}
-              >
-                <Link className="link" to="/CheckoutPage">
+              <Link className="link" to="/CheckoutPage">
+                <button
+                  className="checkOutBtn"
+                  onClick={() => window.location.reload()}
+                >
                   Check out
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

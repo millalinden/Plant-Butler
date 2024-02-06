@@ -76,6 +76,11 @@
     padding: 0.5;
   }
 
+  .addToCartButton{
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
   .productImage {
     margin: auto;
     padding: auto;

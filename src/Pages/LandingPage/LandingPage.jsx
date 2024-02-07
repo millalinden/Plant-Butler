@@ -8,14 +8,8 @@ function LandingPage() {
   return (
     <div>
       <main className={styles.landing}>
-        <div className={styles.mainLogo}>
-          <img
-            className={styles.logo}
-            src="../../../src/Assets/Images/Logo.jpg"
-          />
-        </div>
-        {/* 
-        <h1>Plant Butlers</h1> */}
+        
+        <h1>Plant Butlers</h1>
 
         <br />
         <h2>Hello plant lover! </h2>

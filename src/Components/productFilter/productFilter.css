@@ -36,6 +36,7 @@
   background-color: #9ec086;
   cursor: pointer;
   border: none;
+  color: black;
 }
 @media (max-width: 570px) {
   .filter-h1 {
